@@ -23,16 +23,31 @@ This project is configured with:
 
 ## Development
 
-1. Write your TypeScript code in the `src/` directory
-2. Use `npm run dev` for development with hot reloading
-3. Use `npm run lint` and `npm run format` to ensure code quality
-4. Use `npm run build` to compile for production
+1. **Install recommended VS Code extensions** (you'll get a prompt when opening the project)
+2. Write your TypeScript code in the `src/` directory
+3. Code will be **automatically formatted on save** with Prettier
+4. **ESLint errors will be auto-fixed** on save when possible
+5. Use `npm run dev` for development with hot reloading
+6. Use `npm run lint` and `npm run format` to ensure code quality
+7. Use `npm run build` to compile for production
+
+## VS Code Integration
+
+The project includes VS Code workspace settings that:
+- **Format code on save** using Prettier
+- **Auto-fix ESLint errors** on save
+- **Validate TypeScript/JavaScript** files with ESLint
+- Configure proper **tab size and spacing**
+- **Trim trailing whitespace** and ensure final newlines
 
 ## Project Structure
 
 ```
-├── src/           # TypeScript source files
-├── dist/          # Compiled JavaScript output
+├── src/                 # TypeScript source files
+├── dist/                # Compiled JavaScript output
+├── .vscode/             # VS Code workspace settings
+│   ├── settings.json    # Editor settings (format on save, etc.)
+│   └── extensions.json  # Recommended extensions
 ├── eslint.config.js     # ESLint configuration
 ├── .prettierrc.json     # Prettier configuration
 ├── .prettierignore      # Prettier ignore patterns
